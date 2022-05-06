@@ -1,0 +1,19 @@
+{
+  "name": "teste-planio",
+  "version": "1.0.0",
+  "description": "Api de proposta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasRocha-01/Teste-Planio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasRocha-01/Teste-Planio/issues"
+  },
+  "homepage": "https://github.com/LucasRocha-01/Teste-Planio#readme"
+}
