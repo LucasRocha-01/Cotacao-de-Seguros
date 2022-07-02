@@ -19,7 +19,6 @@
     "faixa1": 20.00,
     "faixa2": 30,
     "faixa3": 40.00
-	
   },
   {
     "codigo": 3,
@@ -44,16 +43,16 @@
   },
   {
     "codigo": 6,
-    "minimo_vidas": 1,
-    "faixa1": 60,
-    "faixa2": 70,
-    "faixa3": 80
-  },
-  {
-    "codigo": 6,
     "minimo_vidas": 2,
     "faixa1": 55.00,
     "faixa2": 65.00,
     "faixa3": 75.00
+  },
+  {
+    "codigo": 6,
+    "minimo_vidas": 1,
+    "faixa1": 60,
+    "faixa2": 70,
+    "faixa3": 80
   }
 ]

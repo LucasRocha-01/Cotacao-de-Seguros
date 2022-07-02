@@ -6,6 +6,7 @@ const fs = require('fs');
 
 const proposta = require('./assets/proposta.json');
 const plans = require('./assets/plans.json');
+const prices = require('./assets/prices.json');
 
 const app = express();
 
@@ -24,6 +25,9 @@ app.get('/planos', (req, res) => {
 })
 app.get('/proposta', (req, res) => {
     return res.json(proposta)
+})
+app.get('/prices', (req, res) => {
+    return res.json(prices)
 })
 
 // inseri dados
