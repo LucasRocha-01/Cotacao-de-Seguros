@@ -124,8 +124,10 @@ function verificaValorDoPlano() {
 function exibeTotal(qtd) {
   if (Number(qtd) == 0) {
     $("div.totalPanos").css("display", "none");
+    $("#send").css("display", "none");
   } else {
     $("div.totalPanos").css("display", "flex");
+    $("#send").css("display", "flex");
   }
 }
 
