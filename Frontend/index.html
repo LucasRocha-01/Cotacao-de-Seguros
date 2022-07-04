@@ -1,4 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!DOCTYPE html>
 <html>
 
@@ -6,31 +5,86 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
-    <script src="getDadosApi.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
 
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <h3 class="navbar-brand">Teste Planium</h3>
+        </div>
+    </nav>
+
     <div class="container">
 
+        <div class="swiper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div id="planex" class="swiper-wrapper">
 
-        <form id="formulario" method="POST" action="">
-            <select name="" id="planex"></select>
-            <p>Codigo: <span id="codigo"></span></p>
-            <input id="codigoDoPlano" name="codigoDoPlano" type="hidden" class="">
-            <input type="hidden" name="registroPlano">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
 
-            <ol id="beneficiarios"></ol>
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-            <a id="addBenef" href="#">Adicionar Beneficiário</a>
-            <input type="submit" id="send" value="Enviar">
-        </form>
+
+        </div>
+
+        <div class="container row justify-content-center">
+            <!-- <select name="" id="planes">
+                    <option>Selecione o Plano</option>
+                </select>
+                <p>Codigo: <span id="codigo"></span></p> -->
+
+            <div id="detalhesPlano">
+
+            </div>
+
+            <form id="formulario" class="">
+                <input id="codigoDoPlano" name="codigoDoPlano" type="hidden" class="">
+                <input type="hidden" name="qtdBeneficiarios">
+                <input type="hidden" name="registroPlano">
+
+                <div class="content">
+                    <div class="infoTitulare d-flex justify-content-between">
+                        <label for="nameTitular">
+                            Nome do Titular
+                            <input id="nameTitular" class="form-control required" type="text" required>
+                        </label>
+                        <label for="Email">
+                            Email do Titular
+                            <input id="Email" class="form-control required" type="email" required>
+                        </label>
+                    </div>
+                    <ol id="beneficiarios"></ol>
+
+                    <div class="totalPanos" style="display: none;">
+                        <label for="totalPanos">Total dos planos escolhidos :</label>
+                        <input id="totalPanos" type="" class="form-control" name="totalPanos" readonly>
+                    </div>
+
+                    <div class="buttonHandles">
+                        <a id="addBenef" class="btn btn-secondary" href="#send">Adicionar Beneficiário</a>
+                        <button id="send" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <script>
 
 
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="getDadosApi.js"></script>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
